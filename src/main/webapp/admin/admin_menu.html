@@ -1,0 +1,18 @@
+
+						<li class="list_item active"><a href="./admin/">Home</a></li>
+					   
+						<c:if test="${sessionScope.adminLogin == null || !sessionScope.adminLogin}"> 
+							<li class="list_item"><a href="admin_login.jsp">Login</a></li> 
+				        </c:if>
+						<c:if test="${sessionScope.adminLogin != null && sessionScope.adminLogin}"> 
+							<li class="list_item"><a href="./addlocation">Add Location</a></li>
+							<li class="list_item"><a href="./listlocations">List of Location</a></li>
+							<li class="list_item"><a href="./addairline">Add Airline</a></li>
+							<li class="list_item"><a href="./listairlines">List of Airlines</a></li>
+							<li class="list_item"><a href="./addflight">Add Flight</a></li>
+							<li class="list_item"><a href="./listflights">List of Flights</a></li>
+							<li class="list_item"><a href="./usersbooking">Users Booking</a></li>
+							<li class="list_item"><a href="./logout">logout</a></li>
+				        </c:if> 
+						<li class="list_item active"><a href="../">User Pages</a></li>
+					   

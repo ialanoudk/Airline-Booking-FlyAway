@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+  <display-name>flyaway</display-name> 
+  
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>flyaway.MainServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>flyaway.BookServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/book</url-pattern>
+    </servlet-mapping>
+ 
+ 
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>flyaway.LoginServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+ 
+ 
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>flyaway.LogoutServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+ 
+ 
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>flyaway.RegisterServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+    <servlet>
+        <servlet-name>BookListServlet</servlet-name>
+        <servlet-class>flyaway.BookListServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>BookListServlet</servlet-name>
+        <url-pattern>/mybooking</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+    <servlet>
+        <servlet-name>AdminMainServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.AdminMainServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>AdminMainServlet</servlet-name>
+        <url-pattern>/admin/</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.AdminLoginServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/admin/login</url-pattern>
+    </servlet-mapping>
+ 
+ 
+    <servlet>
+        <servlet-name>locationServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.locationServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>locationServlet</servlet-name>
+        <url-pattern>/admin/addlocation</url-pattern>
+    </servlet-mapping>
+ 
+ 
+    <servlet>
+        <servlet-name>updateLocationServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.updateLocationServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>updateLocationServlet</servlet-name>
+        <url-pattern>/admin/updatelocation</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+    <servlet>
+        <servlet-name>locationListServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.locationListServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>locationListServlet</servlet-name>
+        <url-pattern>/admin/listlocations</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>airlineServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.airlineServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>airlineServlet</servlet-name>
+        <url-pattern>/admin/addairline</url-pattern>
+    </servlet-mapping>
+ 
+ 
+    <servlet>
+        <servlet-name>updateAirlineServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.updateAirlineServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>updateAirlineServlet</servlet-name>
+        <url-pattern>/admin/updateairline</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+    <servlet>
+        <servlet-name>airlineListServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.airlineListServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>airlineListServlet</servlet-name>
+        <url-pattern>/admin/listairlines</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>flightServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.flightServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>flightServlet</servlet-name>
+        <url-pattern>/admin/addflight</url-pattern>
+    </servlet-mapping>
+ 
+ 
+    <servlet>
+        <servlet-name>updateFlightServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.updateFlightServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>updateFlightServlet</servlet-name>
+        <url-pattern>/admin/updateflight</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+    <servlet>
+        <servlet-name>flightListServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.flightListServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>flightListServlet</servlet-name>
+        <url-pattern>/admin/listflights</url-pattern>
+    </servlet-mapping>
+    
+    
+ 
+    <servlet>
+        <servlet-name>adminBookListServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.adminBookListServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>adminBookListServlet</servlet-name>
+        <url-pattern>/admin/usersbooking</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>adminLogoutServlet</servlet-name>
+        <servlet-class>flyaway.admin.pages.adminLogoutServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>adminLogoutServlet</servlet-name>
+        <url-pattern>/admin/logout</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/Error.jsp</location>
+    </error-page>
+</web-app>

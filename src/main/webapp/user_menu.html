@@ -1,0 +1,11 @@
+
+						<li class="list_item active"><a href="./">Home</a></li>
+					   
+						<c:if test="${sessionScope.id == null || sessionScope.id ==0}"> 
+							<li class="list_item"><a href="login.jsp">Login</a></li> 
+				        </c:if>
+						<c:if test="${sessionScope.id != null && sessionScope.id >0}"> 
+							<li class="list_item"><a href="./mybooking">My Booking</a></li>
+							<li class="list_item"><a href="./logout">logout</a></li>
+				        </c:if>
+						<li class="list_item active"><a href="./admin/">Admin</a></li>
